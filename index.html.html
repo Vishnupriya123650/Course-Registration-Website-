@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Course Registration Form</h2>
+        <div class="form-container">
+            <form onsubmit="return validateForm()">
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="First Name" class="name" id="firstName" required>
+                    <span>
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="Last Name" class="name" id="lastName" required>
+                    </span>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="email" placeholder="Email" required class="text-name" id="email">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Password" required class="text-name" id="password">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Confirm Password" required class="text-name" id="confirmPassword">
+                </div>
+                <div class="input-name">
+                    <input type="radio" class="radio-button" name="gender" value="Male" id="male">
+                    <label style="margin-right: 30px;">Male</label>
+                    <input type="radio" class="radio-button" name="gender" value="Female" id="female">
+                    <label>Female</label>
+                </div>
+                <div class="input-name">
+                    <select class="Course" id="course" required>
+                        <option value="">Select a course</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <select class="College" id="college" required>
+                        <option value="">Select a college</option>
+                        <option value="SVCE">SVCE</option>
+                        <option value="SVEC">SVEC</option>
+                        <option value="SVCK">SVCK</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <select class="Department" id="department" required>
+                        <option value="">Select a department</option>
+                        <option value="CSD">CSD</option>
+                        <option value="CSM">CSM</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <select class="country" id="country" required>
+                        <option value="">Select a country</option>
+                        <option value="Japan">Japan</option>
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="Nepal">Nepal</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <select class="State" id="state" required>
+                        <option value="">Select a state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <input type="checkbox" class="check-button" id="terms" required>
+                    <label class="check">I accept the terms and conditions</label>
+                </div>
+                <div class="input-name">
+                    <input type="submit" class="button" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
